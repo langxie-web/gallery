@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 48px 24px;
+}
+
+div#action {
+	display: flex;
+	justify-content: space-around;
+}
+
+div#action div#reset button {
+	background-color: white;
+	color: darkred;
+	font-weight: bold;
+}
+
+section#gallery {
+	padding-top: 16px;
+}
+
+#gallery ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+}
+
+#gallery li {
+	width: fit-content;
+	position: relative;
+}
+
+#gallery li:hover {
+	filter: brightness(1.2);
+	transition: filter 1s;
+}
+
+#gallery li a {
+	display: inline-block;
+}
+
+#gallery li img {
+	display: block;
+	height: 400px;
+	object-fit: contain;
+	padding: 2px;
+	border: 0.5px solid white;
+	background: lavender;
+	border-radius: 8px;
+}
